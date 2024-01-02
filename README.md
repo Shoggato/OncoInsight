@@ -1,26 +1,41 @@
-# Pymaceuticals_challenge
-Analyzing data to determine which drugs from eight that were choosen would be the best at decreasing tumor volume (mm3) over a period of 45 days in mice that have Small Cell Carcinoma.  This analysis will be performed in Python, utilizing Patplotlib.pyplot, pandas, scipy.stats, and numpy. 
+## OncoInsight: Mice Cancer Therapy Analytics
 
+## Overview
+OncoInsight presents a comprehensive analysis of cancer therapy drugs using a dataset of 249 mice diagnosed with Small Cell Carcinoma (SCC). Focused on identifying promising drugs—Infubinol, Ceftamin, Ramicane, and Capomulin—the analysis encompasses data processing, summary statistics, visualization, and correlation exploration.
 
-## Table of Contents
+## Project Structure
+Explore OncoInsight's structured analysis:
 
-- [Background](#background)
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Contributing](#contributing)
+1) __Data Processing:__
+  * Dependencies and Setup: Importing essential libraries.
+  * Data Collection: Reading and merging mouse metadata and study results.
+  * Data Cleansing: Eliminating duplicate mouse data.
+2) __Summary Statistics:__
+  * Summary table detailing mean, median, variance, standard deviation, and SEM of tumor volume for each drug regimen.
+3) __Bar and Pie Charts:__
+  * Bar Plot: Visualizing total mouse timepoints for each drug regimen.
+  * Pie Plot: Illustrating the distribution of female versus male mice.
+4) __Quartiles, Outliers, and Boxplots:__
+  * Final tumor volume calculation and identification of potential outliers for specific regimens.
+  * Box plot visualization for tumor volume distribution among treatment groups.
+5) __Line and Scatter Plots:__
+  * Line Plot: Tumor volume progression over time for a single mouse treated with Capomulin.
+  * Scatter Plot: Correlation analysis between mouse weight and the average observed tumor volume for Capomulin.
+6) __Correlation and Regression:__
+  * Correlation coefficient calculation between mouse weight and average tumor volume.
+  * Linear regression modeling to explore the relationship between mouse weight and tumor volume.
 
-## Background
-You've just joined Pymaceuticals, Inc., a new pharmaceutical company that specializes in anti-cancer medications. Recently, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
+## Usage
+Run the analysis with ease:
 
-As a senior data analyst at the company, you've been given access to the complete data from their most recent animal study. In this study, 249 mice who were identified with SCC tumors received treatment with a range of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens.
+1) Install Dependenciess:
+```bash
+pip install matplotlib pandas scipy numpy
+```
+2) Execute the Python script or run each code block in a Jupyter notebook.
 
-The executive team has tasked you with generating all of the tables and figures needed for the technical report of the clinical study. They have also asked you for a top-level summary of the study results.
+## Results
+Discover potential cancer therapy candidates, spotlighting Capomulin and Ramicane. OncoInsight emphasizes minimal deviation from the overall mouse population and substantial decreases in total tumor volume. Correlations between mouse weight and tumor volume provide additional insights for future research.
 
-## About
-Analyzing data to determine which drugs from ten that were choosen would be the best at decreasing tumor volume (mm3) over a period of 45 days in mice that have Small Cell Carcinoma.  This analysis will be performed in Python, utilizing Patplotlib.pyplot, pandas, scipy.stats, and numpy.  My observations can be found at the top of the Jupyter notebook titled 'pymaceuticals small cell carcinoma drugs'.  The raw data that is utilized in this project can be found in the 'data' file.  
-
-## Getting Started
-Ensure that you have Python 3.0 installed, as well as Matplotlib, Pandas, Scipy, and numpy modules present in your working environment.  The code file utilizes Jupyter Notebooks for the testing environment.
-
-## Contributing
+## Contributor
 Erika Walker
